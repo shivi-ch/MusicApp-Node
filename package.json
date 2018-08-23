@@ -4,7 +4,7 @@
   "description": "buying music related items and gadgets and intruments",
   "main": "app.js",
   "scripts": {
-     "start": "node server/app.js",
+     "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Shivi",
