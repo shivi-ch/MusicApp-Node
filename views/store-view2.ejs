@@ -1,0 +1,65 @@
+<html>
+
+<head>
+    <title>Store</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="/assets/cart.js"></script>
+    <link rel="stylesheet" href="/assets/style.css">
+
+
+</head>
+
+<body>
+    <div id="master">
+        <header>
+
+            <div id="logo"> <img src="/assets/storelogo.png"> </div>
+            <div id="tag-line"><img src="/assets/storel.png"></div>
+        </header>
+
+        <nav>
+
+            <ul>
+                <li><a href="/store/<%= nama %>" method="GET">Home</a></li>
+                
+                <!-- <li><a href="/store/contact" method="GET">Contact</a></li> -->
+                 <li><a href="/" method="GET">SignOut</a></li>
+            </ul>
+
+        </nav>
+
+        
+
+        <h1 id="names"><%= nama %></h1>
+
+            <% var j=0 %>
+        <% for(var i=0;i<carti.length;i++){ %>
+            
+        <% var j = j + carti[i].price %>
+         <% } %>
+         <h1>Total Ammount :- <%= j %> </h1>
+
+        
+        <% for(var i=0;i<carti.length;i++){ %>
+            
+            <div id="item">
+                <div id="frame">
+                    <img id="pic" src=<%= carti[i].addres %> >
+                </div>
+        
+                <p id="iname"><%= carti[i].name %></p>
+        
+                <p id="price">PRICE :- <%= carti[i].price %> </p>
+        
+                <button class="remove" value="<%= carti[i]._id %>">Remove From Cart</button>
+            
+            </div>
+           
+            <% } %>
+            
+    </div>
+    
+</body>
+
+</html>

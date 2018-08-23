@@ -1,0 +1,43 @@
+<html>
+
+<head>
+    <title>Store</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <!-- <script src="/assets/stor-e.js"></script> -->
+        
+    <link rel="stylesheet" href="/assets/style.css">
+
+
+</head>
+
+<body>
+    <div id="master">
+        <header>
+
+            <div id="logo"> <img src="/assets/storelogo.png"> </div>
+            <div id="tag-line"><img src="/assets/storel.png"></div>
+        </header>
+
+        
+        
+        
+        <div id="formframe">
+            <form id="mform" action="/store" method="POST">
+                User Name:   <input type="text" name="luname" required><br>
+
+                 Password:    <input type="password" name="lpassword"><br> 
+                 
+                <button type="submit" id="signin">Sign In</button>
+            </form>
+             <h4> <%= msg %> </h4>
+
+             <h1 id="or">Or</h1>
+
+             <a id="reg" href="/store/signup">Register with us</a>
+        </div>
+
+    </div>
+</body>
+
+</html>

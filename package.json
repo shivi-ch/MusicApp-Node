@@ -1,0 +1,21 @@
+{
+  "name": "musicstore",
+  "version": "1.0.0",
+  "description": "buying music related items and gadgets and intruments",
+  "main": "app.js",
+  "scripts": {
+     "start": "node server/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Shivi",
+  "license": "ISC",
+  "dependencies": {
+    "alert-node": "^1.2.0",
+    "body-parser": "^1.18.2",
+    "ejs": "^2.5.8",
+    "ejs-lint": "^0.3.0",
+    "express.js": "^1.0.0",
+    "js-alert": "^1.0.4",
+    "mongoose": "^5.0.12"
+  }
+}

@@ -1,0 +1,49 @@
+<html>
+
+<head>
+    <title>Store</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="/assets/stor-e.js"></script>
+    <link rel="stylesheet" href="/assets/style.css">
+
+
+</head>
+
+<body>
+    <div id="master">
+        <header>
+
+            <div id="logo"> <img src="/assets/storelogo.png"> </div>
+            <div id="tag-line"><img src="/assets/storel.png"></div>
+        </header>
+
+        <a id="lg" href="/">Login Here!!</a>
+
+        <h1>Register with Us</h1>
+
+        
+        <div id="formframe">
+        <form id="mform" action="/store/login" method="POST">
+            Name:   <input type="text" name="fname" required><br>
+            Last Name:  <input type="text" name="lname"><br>
+            User Name: <input type="text" name="username" required><br>
+            Password: <input name="password" type="password" pattern=".{0}|.{8,}" required title="the length gould be minimum 8 char" reqired><br>
+            Contact Number:   <input name="cnumber" type="text"  pattern="([0-9]).{9,11}" title="The number should be 10 digit and must contain number only" required><br>
+            Date of birth:   <input name="dbirth" type="date" required> <br>
+            Sex: <select name="sex" id="sex" required>
+                <option value="">select</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+             </select><br>
+            <button type="submit" id="signup">Sign Up</button>
+        </form>
+
+        <%= msg %>
+       
+        </div>
+    
+    </div>
+</body>
+
+</html>

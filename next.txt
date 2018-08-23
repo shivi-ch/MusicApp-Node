@@ -1,0 +1,11 @@
+database : cart
+feilds:item id,customer id,price,name,image.
+
+in cart page
+1.items cutomer added
+2.total
+3.buy now
+4.increase the quantity
+5.delete the item
+
+done 
